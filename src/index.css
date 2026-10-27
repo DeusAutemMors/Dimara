@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-dimara-ivory: #FAF8F5;
+  --color-dimara-cream: #F4EFEA;
+  --color-dimara-sand: #E6DFD5;
+  --color-dimara-sand-dark: #D4C9BA;
+  --color-dimara-taupe: #8C8276;
+  --color-dimara-charcoal: #1C1A19;
+  --color-dimara-black: #0E0D0C;
+  --color-dimara-gold: #C5A880;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-dimara-ivory);
+    color: var(--color-dimara-charcoal);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom scrollbars and styling */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

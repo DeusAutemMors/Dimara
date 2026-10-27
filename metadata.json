@@ -1,0 +1,6 @@
+{
+  "name": "DIMARA Moda Femenina",
+  "description": "Boutique de moda femenina DIMARA. Siluetas contemporáneas, elegancia atemporal y confección nacional con venta directa por WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
